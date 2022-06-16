@@ -1,0 +1,18 @@
+<h2 class="ui center aligned header">Welcome to Message Application</h2>
+<h2 class="ui center aligned icon medium header">
+  <i class="circular user blue icon"></i>
+  <%= @user.username %>'s profile</h1>
+</h2>
+
+<div class="ui two column centered grid">
+  <div class="column">
+    <form class="ui form">
+      <div class="inline fields">
+        <div class="fourteen wide field">
+          <label>Username</label>
+          <input type="text" name="username" value="<%= @user.username %>" >
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

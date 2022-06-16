@@ -1,0 +1,29 @@
+<h2 class="ui center aligned header">Welcome to Message Application</h2>
+<h2 class="ui center aligned icon medium header">
+  <i class="circular user blue icon"></i>
+  Sign Up to continue
+</h2>
+
+<div class="ui two column centered grid">
+  <div class="column">
+    <%= render 'shared/errors', obj: @user %>
+    <%= form_with(model: @user, class: "ui form", local: true) do |f| %>
+      <div class="field">
+        <%= f.label :username %>
+        <%= f.text_field :username, placeholder: "Enter a username" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password %>
+        <%= f.password_field :password, placeholder: "Enter a password" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :confirm_password %>
+        <%= f.password_field :password_confirmation, placeholder: "Enter a password confirmation" %>
+      </div>
+
+      <%= f.submit "Sign Up", class: "ui button blue" %>
+    <% end %>
+  </div>
+</div>

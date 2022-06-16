@@ -1,0 +1,13 @@
+<% if obj.errors.any? %>
+  <div class="ui error message">
+    <i class="close icon"></i>
+    <div class="header">Something went wrong! Please check the following errors below:</div>
+    <ul class="list">
+      <% obj.errors.full_messages.each do |msg| %>
+        <li>
+          <%= msg %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+<% end %> 

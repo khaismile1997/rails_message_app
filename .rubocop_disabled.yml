@@ -123,3 +123,6 @@ RSpec/ExampleLength:
 Layout/BeginEndAlignment:
   Description: Checks whether the end keyword of begin is aligned properly.
   Enabled: false
+
+Rails/I18nLocaleTexts:
+  Enabled: false

@@ -1,0 +1,20 @@
+<div class="ui container">
+  <% flash.each do |name, msg| %>
+    <% if name == "alert" %>
+      <div class="ui warning message">
+        <i class="close icon"></i>
+        <div class="header">
+          <%= msg %>
+        </div>
+      </div>
+    <% end %>
+    <% if name == "notice" %>
+      <div class="ui success message">
+        <i class="close icon"></i>
+        <div class="header">
+          <%= msg %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>
